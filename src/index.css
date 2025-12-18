@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  /* font family */
+  --font-outfit: "Outfit", sans-serif;
+
+  /* color */
+  --color-main: #1C1C1D;
+  --color-main-2: #252728;
+  --color-royal-blue: #0866FF;
+  --color-dark-gray: #484848;
+
+  /* breakpoints  */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-4xl: 1920px;
+}
+
+@layer base {
+
+  body {
+    @apply bg-main min-h-screen text-white/90 font-outfit
+  }
+
+  span {
+    @apply inline-block;
+  }
+
+  input:focus {
+    @apply !shadow-none !outline-0;
+  }
+
+  ul {
+    @apply list-none
+  }
+
+  button,
+  a {
+    @apply transition-all duration-300 cursor-pointer max-h-none inline-block;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply 4xl:max-w-[1920px] mx-auto px-5;
+  }
+
+  .tooltip-white[data-tip]::before {
+    @apply !bg-[#D0D0D0] !text-black !rounded-[10px] !py-2 !px-3;
+  }
+
+  .tooltip-white[data-tip]::after {
+    @apply !hidden
+  }
+
+  /* .nav-link::after {
+    @apply content-[""] absolute bottom-0 w-0 h-0.5 bg-[#0866FF] left-auto right-auto mx-auto
+  } */
+
+  .header-list .active {
+    @apply text-[#0866FF]
+  }
+
+  /* .nav-link.active::after {
+    @apply w-full
+  } */
+
+  .sidebar__ul a:hover svg {
+    @apply !fill-royal-blue transition-all duration-300
+  }
+}
+
+@layer utilities {
+  /*  */
+}
