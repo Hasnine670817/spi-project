@@ -18,8 +18,8 @@ const MainLayouts = () => {
                         <>
                             <Sidebar></Sidebar>
                         </>
-                        <div className='lg:w-[375px] xl:w-[545px] mx-auto'>
-                            <div className='py-6'>
+                        <div className='w-full lg:w-[375px] xl:w-[545px] mx-auto'>
+                            <div className='pt-6 pb-20 lg:py-6'>
                                 <Outlet></Outlet>
                             </div>
                         </div>

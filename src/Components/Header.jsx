@@ -58,7 +58,7 @@ const Header = () => {
                             </label>
                         </form>
                     </div>
-                    <ul className='fixed border-t border-white/20 lg:border-0 px-5 lg:px-0 w-full justify-between bottom-0 left-0 lg:static flex gap-2 items-center lg:justify-center text-2xl text-white/70 header-list'>
+                    <ul className='fixed border-t bg-[#252728] lg:bg-transparent border-white/20 lg:border-0 px-5 lg:px-0 w-full justify-between bottom-0 left-0 lg:static flex gap-2 items-center lg:justify-center text-2xl text-white/70 header-list'>
                         {navBar}
                     </ul>
                     <div className='hidden lg:flex items-center justify-end gap-2'>
