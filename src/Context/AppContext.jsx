@@ -15,6 +15,8 @@ const AppProvider = ({children}) => {
 
     const [selectedUser, setSelectedUser] = useState([]);
 
+    const [sellItem, setSellItem] = useState([]);
+
     useEffect(() => {
         fetch('/Teachers.json')
             .then(res => res.json())
@@ -53,6 +55,19 @@ const AppProvider = ({children}) => {
                 setLoading(false)
             })
     }, []);
+
+    useEffect(() => {
+        fetch('/SellItem.json')
+            .then(res => res.json())
+            .then(data => {
+                setSellItem(data)
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error(error);
+                setLoading(false)
+            })
+    }, [])
 
 
 
@@ -122,6 +137,7 @@ const AppProvider = ({children}) => {
         sideBar,
         teacher,
         student,
+        sellItem,
         handleLogin,
         handleSignUp,
         selectedUser,

@@ -18,7 +18,7 @@ const MainLayouts = () => {
                         <>
                             <Sidebar></Sidebar>
                         </>
-                        <div className='w-full lg:w-[375px] xl:w-[545px] mx-auto'>
+                        <div className='w-full lg:w-[375px] xl:w-[545px] 2xxl:w-[700px] 3xl:w-[800px] 3xxl:w-[900px] 3xxxl:w-[1000px] mx-auto'>
                             <div className='pt-6 pb-20 lg:py-6'>
                                 <Outlet></Outlet>
                             </div>

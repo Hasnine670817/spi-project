@@ -20,6 +20,10 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --breakpoint-2xl: 1400px;
+  --breakpoint-2xxl: 1500px;
+  --breakpoint-3xl: 1600px;
+  --breakpoint-3xxl: 1700px;
+  --breakpoint-3xxxl: 1800px;
   --breakpoint-4xl: 1920px;
 }
 

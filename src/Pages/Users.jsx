@@ -2,12 +2,13 @@
 import { useContext, useState } from "react";
 import { AppContext } from "../Context/AppContext";
 import ViewMoreModal from "../Components/ViewMoreModal";
+import Loader from "../Components/Loader";
 
 
 const Users = () => {
     const [filter, setFilter] = useState("Teacher");
 
-    const { teacher, student, handleViewMore } = useContext(AppContext);
+    const { teacher, student, handleViewMore, loading } = useContext(AppContext);
 
     const [currentPage, setCurrentPage] = useState(1);
     const usersPerPage = 8;
@@ -29,6 +30,13 @@ const Users = () => {
     const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
     };
+
+
+    if (loading) {
+        return (
+            <Loader></Loader>
+        );
+    }
 
     return (
         <div className="bg-[#121212] min-h-[calc(100vh-64px)] p-4 lg:p-6 rounded-xl">
@@ -61,7 +69,7 @@ const Users = () => {
             </div>
 
             {/* Users Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 3xl:grid-cols-3 gap-4">
                 {currentUsers.map((user) => (
                     <div
                         key={user.id}
