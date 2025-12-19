@@ -10,6 +10,35 @@ const AppProvider = ({children}) => {
     const [user, setUser] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const [teacher, setTeacher] = useState([]);
+    const [student, setStudent] = useState([]);
+
+    useEffect(() => {
+        fetch('/Teachers.json')
+            .then(res => res.json())
+            .then(data => {
+                setTeacher(data);
+                setLoading(false)
+            })
+            .catch(error => {
+                console.error(error);
+                setLoading(false)
+            })
+    }, []);
+
+    useEffect(() => {
+        fetch('/Students.json')
+            .then(res => res.json())
+            .then(data => {
+                setStudent(data);
+                setLoading(false)
+            })
+            .catch(error => {
+                console.error(error);
+                setLoading(false)
+            })
+    }, []);
+
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(res => res.json())
@@ -22,6 +51,8 @@ const AppProvider = ({children}) => {
                 setLoading(false)
             })
     }, []);
+
+
 
     const sideBar = (
         <>
@@ -82,6 +113,8 @@ const AppProvider = ({children}) => {
         user,
         loading,
         sideBar,
+        teacher,
+        student,
         handleLogin,
         handleSignUp
     }
