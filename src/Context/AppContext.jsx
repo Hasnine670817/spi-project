@@ -1,4 +1,4 @@
-import { Children, createContext, useEffect, useState } from "react";
+import { Children, createContext, use, useEffect, useState } from "react";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { MdApartment, MdCampaign, MdContactMail, MdDashboard, MdEvent } from "react-icons/md";
 import { PiStudentBold } from "react-icons/pi";
@@ -12,6 +12,8 @@ const AppProvider = ({children}) => {
 
     const [teacher, setTeacher] = useState([]);
     const [student, setStudent] = useState([]);
+
+    const [selectedUser, setSelectedUser] = useState([]);
 
     useEffect(() => {
         fetch('/Teachers.json')
@@ -109,6 +111,11 @@ const AppProvider = ({children}) => {
         document.getElementById('signup__modal').showModal()
     }
 
+    const handleViewMore = (user) => {
+        setSelectedUser(user);
+        document.getElementById('view__more').showModal();
+    }
+
     const value = {
         user,
         loading,
@@ -116,7 +123,9 @@ const AppProvider = ({children}) => {
         teacher,
         student,
         handleLogin,
-        handleSignUp
+        handleSignUp,
+        selectedUser,
+        handleViewMore
     }
 
     return (

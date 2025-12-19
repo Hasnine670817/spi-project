@@ -91,6 +91,12 @@ const Header = () => {
                                             <IoMdClose />
                                         </label>
                                     </div>
+                                    <form className='mb-4 sm:hidden'>
+                                        <label className='relative'>
+                                            <span className='absolute left-4 top-1 text-white/80 z-10 text-base'><IoSearchSharp /></span>
+                                            <input className='input bg-[#333334] border-0 shadow-none rounded-full placeholder:text-white/60 w-full px-5 ps-10' type="search" name="search" id="search" placeholder='Search...' />
+                                        </label>
+                                    </form>
                                     <ul>
                                         {/* Sidebar content here */}
                                         {sideBar}

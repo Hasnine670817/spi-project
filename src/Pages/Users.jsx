@@ -1,44 +1,13 @@
 
 import { useContext, useState } from "react";
 import { AppContext } from "../Context/AppContext";
+import ViewMoreModal from "../Components/ViewMoreModal";
 
-// const usersData = [
-//     {
-//         id: 1,
-//         name: "Md. Rahim",
-//         role: "Student",
-//         department: "Computer Technology",
-//     },
-//     {
-//         id: 2,
-//         name: "Engr. Karim",
-//         role: "Teacher",
-//         department: "Electrical Technology",
-//     },
-//     {
-//         id: 3,
-//         name: "Ayesha Akter",
-//         role: "Student",
-//         department: "Civil Technology",
-//     },
-//     {
-//         id: 4,
-//         name: "Md. Hasan",
-//         role: "Staff",
-//         department: "Office",
-//     },
-//     {
-//         id: 5,
-//         name: "Engr. Selina",
-//         role: "Teacher",
-//         department: "Computer Technology",
-//     },
-// ];
 
 const Users = () => {
     const [filter, setFilter] = useState("Teacher");
 
-    const { teacher, student } = useContext(AppContext);
+    const { teacher, student, handleViewMore } = useContext(AppContext);
 
     const [currentPage, setCurrentPage] = useState(1);
     const usersPerPage = 8;
@@ -114,7 +83,7 @@ const Users = () => {
                             {user.department}
                         </p>
 
-                        <button className="mt-3 text-sm text-blue-500 hover:underline">
+                        <button type="button" onClick={() => handleViewMore(user)} className="mt-3 text-sm text-blue-500 hover:underline">
                             View More
                         </button>
                     </div>
@@ -139,6 +108,8 @@ const Users = () => {
                     ))}
                 </div>
             )}
+
+            <ViewMoreModal></ViewMoreModal>
 
         </div>
     );
