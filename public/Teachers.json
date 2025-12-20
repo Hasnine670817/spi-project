@@ -6,6 +6,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "bulbul.cicmt@gmail.com",
         "batch": "BCS-0"
@@ -17,6 +18,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "mukulcse31@gmail.com",
         "batch": "BCS-35"
@@ -28,6 +30,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "wtbl.hasan@gmail.com",
         "batch": "BCS-38"
@@ -39,6 +42,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "uzzolspi@gmail.com",
         "batch": "BCS-0"
@@ -50,6 +54,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "obaidullahalnoman.cse@gmail.com",
         "batch": "BCS-0"
@@ -61,6 +66,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "rashedjr1997@gmail.com",
         "batch": "BCS-0"
@@ -72,6 +78,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "mrzrukon@gmail.com",
         "batch": "BCS-0"
@@ -83,6 +90,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "mehedihasanhridoy.cse@gmail.com",
         "batch": "BCS-0"
@@ -94,6 +102,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "touhidspi@gmail.com",
         "batch": "BCS-0"
@@ -105,6 +114,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Computer Science and Technology",
+        "category": "computer",
         "faculty": "Computer Science and Technology",
         "email": "mdrumancse@gmail.com",
         "batch": "BCS-0"
@@ -116,6 +126,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Civil Technology",
+        "category": "civil",
         "faculty": "Civil Technology",
         "email": "mynul99@gmail.com",
         "batch": "BCS-0"
@@ -127,6 +138,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Civil Technology",
+        "category": "civil",
         "faculty": "Civil Technology",
         "email": "smzuplabon@gmail.com",
         "batch": "BCS-0"
@@ -138,6 +150,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Civil Technology",
+        "category": "civil",
         "faculty": "Civil Technology",
         "email": "jakiaferdousy@gmail.com",
         "batch": "BCS-0"
@@ -149,6 +162,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Civil Technology",
+        "category": "civil",
         "faculty": "Civil Technology",
         "email": "shakhawathossen023@gmail.com",
         "batch": "BCS-0"
@@ -160,6 +174,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Civil Technology",
+        "category": "civil",
         "faculty": "Civil Technology",
         "email": "jakariamahmud19@gmail.com",
         "batch": "BCS-0"
@@ -171,6 +186,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Civil Technology",
+        "category": "civil",
         "faculty": "Civil Technology",
         "email": "civilarif206@gmail.com",
         "batch": "BCS-0"
@@ -182,6 +198,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Civil Technology",
+        "category": "civil",
         "faculty": "Civil Technology",
         "email": "abdullahmamun3640@gmail.com",
         "batch": "BCS-0"
@@ -193,6 +210,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Electrical Technology",
+        "category": "electrical",
         "faculty": "Electrical Technology",
         "email": "ahassannazmul@gmail.com",
         "batch": "BCS-0"
@@ -204,6 +222,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Electrical Technology",
+        "category": "electrical",
         "faculty": "Electrical Technology",
         "email": "mamun749813@gmail.com",
         "batch": "BCS-0"
@@ -215,6 +234,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Electrical Technology",
+        "category": "electrical",
         "faculty": "Electrical Technology",
         "email": "12abdulla5@gmail.com",
         "batch": "BCS-0"
@@ -226,6 +246,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Electrical Technology",
+        "category": "electrical",
         "faculty": "Electrical Technology",
         "email": "skprotap1@gmail.com",
         "batch": "BCS-0"
@@ -237,6 +258,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Electrical Technology",
+        "category": "electrical",
         "faculty": "Electrical Technology",
         "email": "firozahmedeee123@gmail.com",
         "batch": "BCS-0"
@@ -248,6 +270,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Electronics Technology",
+        "category": "electronics",
         "faculty": "Electronics Technology",
         "email": "",
         "batch": "BCS-38"
@@ -259,6 +282,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Electronics Technology",
+        "category": "electronics",
         "faculty": "Electronics Technology",
         "email": "mosharafspi@gmail.com",
         "batch": "BCS-0"
@@ -270,6 +294,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Electronics Technology",
+        "category": "electronics",
         "faculty": "Electronics Technology",
         "email": "",
         "batch": "BCS-0"
@@ -281,6 +306,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Electronics Technology",
+        "category": "electronics",
         "faculty": "Electronics Technology",
         "email": "saikottazbiul3750@gmail.com",
         "batch": "BCS-0"
@@ -292,6 +318,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Electronics Technology",
+        "category": "electronics",
         "faculty": "Electronics Technology",
         "email": "mdnuralam37301700@gmail.com",
         "batch": "BCS-0"
@@ -303,6 +330,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Electronics Technology",
+        "category": "electronics",
         "faculty": "Electronics Technology",
         "email": "mdlinconmia@gmail.com",
         "batch": "BCS-0"
@@ -314,6 +342,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Electronics Technology",
+        "category": "electronics",
         "faculty": "Electronics Technology",
         "email": "md.jahidulislam766192@gmail.com",
         "batch": "BCS-0"
@@ -325,6 +354,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Non-Tech",
+        "category": "non-tech",
         "faculty": "Non-Tech",
         "email": "parimaldey02@gmail.com",
         "batch": "BCS-0"
@@ -336,6 +366,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Non-Tech",
+        "category": "non-tech",
         "faculty": "Non-Tech",
         "email": "shajahanabid1977@gmail.com",
         "batch": "BCS-0"
@@ -347,6 +378,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Non-Tech",
+        "category": "non-tech",
         "faculty": "Non-Tech",
         "email": "milon.chemist18@gmail.com",
         "batch": "BCS-0"
@@ -358,6 +390,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Non-Tech",
+        "category": "non-tech",
         "faculty": "Non-Tech",
         "email": "rafiqmpi82@gmail.com",
         "batch": "BCS-0"
@@ -369,6 +402,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Non-Tech",
+        "category": "non-tech",
         "faculty": "Non-Tech",
         "email": "Kamaruzzamanspi2024@gmail.com",
         "batch": "BCS-41"
@@ -380,6 +414,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Non-Tech",
+        "category": "non-tech",
         "faculty": "Non-Tech",
         "email": "saiful09203026@gmail.com",
         "batch": "BCS-41"
@@ -391,6 +426,7 @@
         "shift": "2nd Shift",
         "role": "teacher",
         "department": "Non-Tech",
+        "category": "non-tech",
         "faculty": "Non-Tech",
         "email": "Sultanasadiya664@gmail.com",
         "batch": "BCS-41"
@@ -402,6 +438,7 @@
         "shift": "1st Shift",
         "role": "teacher",
         "department": "Environmental Technology",
+        "category": "environment",
         "faculty": "Environmental Technology",
         "email": "shuvasen1@gmail.com",
         "batch": "BCS-41"
@@ -413,6 +450,7 @@
         "shift": "N/A",
         "role": "teacher",
         "department": "Environmental Technology",
+        "category": "environment",
         "faculty": "Environmental Technology",
         "email": "hasibulspi1992@gmail.com",
         "batch": "BCS-0"
@@ -424,6 +462,7 @@
         "shift": "N/A",
         "role": "teacher",
         "department": "Environmental Technology",
+        "category": "environment",
         "faculty": "Environmental Technology",
         "email": "amirhamzaspi@gmail.com",
         "batch": "BCS-0"
@@ -435,6 +474,7 @@
         "shift": "N/A",
         "role": "teacher",
         "department": "Environmental Technology",
+        "category": "environment",
         "faculty": "Environmental Technology",
         "email": "",
         "batch": "BCS-0"
@@ -446,6 +486,7 @@
         "shift": "N/A",
         "role": "teacher",
         "department": "Environmental Technology",
+        "category": "environment",
         "faculty": "Environmental Technology",
         "email": "Shahinspi1996@gmail.com",
         "batch": "BCS-0"
@@ -457,6 +498,7 @@
         "shift": "N/A",
         "role": "teacher",
         "department": "Environmental Technology",
+        "category": "environment",
         "faculty": "Environmental Technology",
         "email": "lutfor1999rahman@gmail.com",
         "batch": "BCS--2"
@@ -468,6 +510,7 @@
         "shift": "N/A",
         "role": "teacher",
         "department": "Environmental Technology",
+        "category": "environment",
         "faculty": "Environmental Technology",
         "email": "rokunu87@gmail.com",
         "batch": "BCS-0"
@@ -479,6 +522,7 @@
         "shift": "N/A",
         "role": "teacher",
         "department": "Environmental Technology",
+        "category": "environment",
         "faculty": "Environmental Technology",
         "email": "engr.rubel61@gmail.com",
         "batch": "BCS-0"
@@ -490,6 +534,7 @@
         "shift": "N/A",
         "role": "teacher",
         "department": "Environmental Technology",
+        "category": "environment",
         "faculty": "Environmental Technology",
         "email": "mrokibul607@gmail.com",
         "batch": "BCS-0"

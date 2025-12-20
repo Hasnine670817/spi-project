@@ -8,7 +8,8 @@
         "batch_start": 20,
         "batch_end": 21,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
         "batch_start": 20,
         "batch_end": 21,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 7,
@@ -74,7 +80,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 8,
@@ -85,7 +92,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 9,
@@ -96,7 +104,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 10,
@@ -107,7 +116,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 11,
@@ -118,7 +128,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 12,
@@ -129,7 +140,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 13,
@@ -140,7 +152,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 14,
@@ -151,7 +164,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 15,
@@ -162,7 +176,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 16,
@@ -173,7 +188,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 17,
@@ -184,7 +200,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 18,
@@ -195,7 +212,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 19,
@@ -206,7 +224,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 20,
@@ -217,7 +236,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 21,
@@ -228,7 +248,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 22,
@@ -239,7 +260,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 23,
@@ -250,7 +272,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 24,
@@ -261,7 +284,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 25,
@@ -272,7 +296,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 26,
@@ -283,7 +308,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 27,
@@ -294,7 +320,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 28,
@@ -305,7 +332,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 29,
@@ -316,7 +344,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 30,
@@ -327,7 +356,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 31,
@@ -338,7 +368,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 32,
@@ -349,7 +380,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 33,
@@ -360,7 +392,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 34,
@@ -371,7 +404,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 35,
@@ -382,7 +416,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 36,
@@ -393,7 +428,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 37,
@@ -404,7 +440,8 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     },
     {
         "id": 38,
@@ -415,6 +452,7 @@
         "batch_start": 21,
         "batch_end": 22,
         "role": "student",
-        "department": "Computer Science and Technology"
+        "department": "Computer Science and Technology",
+        "category": "computer"
     }
 ]

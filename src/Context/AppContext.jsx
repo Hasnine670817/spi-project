@@ -1,8 +1,8 @@
-import { Children, createContext, use, useEffect, useState } from "react";
+import { Children, createContext, useEffect, useState } from "react";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { MdApartment, MdCampaign, MdContactMail, MdDashboard, MdEvent } from "react-icons/md";
 import { PiStudentBold } from "react-icons/pi";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const AppContext = createContext(null);
 
@@ -74,46 +74,46 @@ const AppProvider = ({children}) => {
     const sideBar = (
         <>
             <li>
-                <Link className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/80 flex items-center gap-3 mb-2'>
+                <NavLink to={"/"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
                     <MdDashboard className='text-2xl transition-all duration-300' />
                     Dashboard
-                </Link>
+                </NavLink>
             </li>
             <li>
-                <Link className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/80 flex items-center gap-3 mb-2'>
+                <NavLink to={"/notices"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
                     <MdCampaign className='text-2xl transition-all duration-300' />
                     Notices
-                </Link>
+                </NavLink>
             </li>
             <li>
-                <Link className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/80 flex items-center gap-3 mb-2'>
+                <NavLink to={"departments"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
                     <MdApartment className='text-2xl transition-all duration-300' />
                     Departments
-                </Link>
+                </NavLink>
             </li>
             <li>
-                <Link className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/80 flex items-center gap-3 mb-2'>
+                <NavLink to={"/teachers"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
                     <FaChalkboardTeacher className='text-2xl transition-all duration-300' />
                     Teachers
-                </Link>
+                </NavLink>
             </li>
             <li>
-                <Link className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/80 flex items-center gap-3 mb-2'>
+                <NavLink to={"students"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
                     <PiStudentBold className='text-2xl transition-all duration-300' />
                     Students
-                </Link>
+                </NavLink>
             </li>
             <li>
-                <Link className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/80 flex items-center gap-3'>
+                <NavLink to={"events"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3'>
                     <MdEvent className='text-2xl transition-all duration-300' />
                     Events
-                </Link>
+                </NavLink>
             </li>
             <li>
-                <Link className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/80 flex items-center gap-3'>
+                <NavLink to={"contact"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3'>
                     <MdContactMail className='text-2xl transition-all duration-300' />
                     Contact
-                </Link>
+                </NavLink>
             </li>
         </>
     )

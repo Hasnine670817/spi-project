@@ -1,7 +1,7 @@
 
 const RightPanel = () => {
     return (
-        <aside className="lg:w-[240px] xl:w-[270px] 2xl:w-[320px] hidden lg:block py-6 sticky top-16 h-[calc(100vh-64px)] overflow-y-auto">
+        <aside className="lg:w-[240px] xl:w-[270px] 2xl:w-[320px] hidden lg:block py-6 sticky top-16 h-[calc(100vh-100px)] overflow-y-auto">
 
             {/* Upcoming Events */}
             <div className="bg-[#1f1f1f] rounded-xl p-4 mb-4">

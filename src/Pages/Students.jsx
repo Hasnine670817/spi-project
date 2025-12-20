@@ -1,42 +1,32 @@
-
 import { useContext, useState } from "react";
 import { AppContext } from "../Context/AppContext";
 import ViewMoreModal from "../Components/ViewMoreModal";
-import Loader from "../Components/Loader";
 
+const Students = () => {
 
-const Users = () => {
-    const [filter, setFilter] = useState("Teacher");
-
-    const { teacher, student, handleViewMore, loading } = useContext(AppContext);
-
-    const [currentPage, setCurrentPage] = useState(1);
-    const usersPerPage = 8;
-
-    // Determine which users to show based on filter
-    const filteredUsers = () => {
-        if (filter === "Teacher") return teacher;
-        if (filter === "Student") return student;
-        // if (filter === "Staff") return staff;
-        return [];
-    };
-
-    // Pagination logic
-    const indexOfLastUser = currentPage * usersPerPage;
-    const indexOfFirstUser = indexOfLastUser - usersPerPage;
-    const currentUsers = filteredUsers().slice(indexOfFirstUser, indexOfLastUser);
-    const totalPages = Math.ceil(filteredUsers().length / usersPerPage);
-
-    const handlePageChange = (pageNumber) => {
-        setCurrentPage(pageNumber);
-    };
-
-
-    if (loading) {
-        return (
-            <Loader></Loader>
-        );
-    }
+    const { student, handleViewMore } = useContext(AppContext);
+    
+        const [selectedCategory, setSelectedCategory] = useState("all");
+    
+        const [currentPage, setCurrentPage] = useState(1);
+        const usersPerPage = 8;
+    
+        const handleCategoryBtn = (category) => {
+            setSelectedCategory(category);
+        }
+    
+        const filteredStudents = selectedCategory === "all" ? student : 
+            student.filter(t => t.category === selectedCategory);
+    
+        // Pagination logic
+        const indexOfLastUser = currentPage * usersPerPage;
+        const indexOfFirstUser = indexOfLastUser - usersPerPage;
+        const currentTeachers = filteredStudents.slice(indexOfFirstUser, indexOfLastUser);
+        const totalPages = Math.ceil(filteredStudents.length / usersPerPage);
+    
+        const handlePageChange = (pageNumber) => {
+            setCurrentPage(pageNumber);
+        };
 
     return (
         <div className="bg-[#121212] min-h-[calc(100vh-140px)] p-4 lg:p-6 rounded-xl">
@@ -44,33 +34,26 @@ const Users = () => {
             {/* Header */}
             <div className="mb-6">
                 <h2 className="text-white text-xl font-semibold">
-                    Users
+                    Teachers
                 </h2>
                 <p className="text-gray-400 text-sm">
-                    Students, Teachers & Staff Directory
+                    All SPI Teachers list
                 </p>
             </div>
 
-            {/* Filter Buttons */}
+            {/* Category Buttons */}
             <div className="flex flex-wrap gap-2 mb-6">
-                {["Teacher", "Student", "Staff"].map((role) => (
-                    <button
-                        key={role}
-                        onClick={() => setFilter(role)}
-                        className={`px-4 py-2 rounded-xl text-sm ${
-                            filter === role
-                                ? "bg-blue-600 text-white"
-                                : "bg-[#1f1f1f] text-gray-300 hover:bg-white/10"
-                        }`}
-                    >
-                        {role}
-                    </button>
-                ))}
+                <button onClick={() => handleCategoryBtn("all")} className={`px-4 py-2 rounded-xl text-sm capitalize ${selectedCategory === "all" ? "bg-blue-600 text-white" : "bg-[#1f1f1f] text-gray-300 hover:bg-white/10" }`}>all</button>
+                {
+                    [...new Set(student.map(t => t.category))].map((category, idx) => (
+                        <button onClick={() => handleCategoryBtn(category)} className={`px-4 py-2 rounded-xl text-sm capitalize ${selectedCategory === category ? "bg-blue-600 text-white" : "bg-[#1f1f1f] text-gray-300 hover:bg-white/10" }`} key={idx}>{category}</button>
+                    ))
+                }
             </div>
 
             {/* Users Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 3xl:grid-cols-3 gap-4">
-                {currentUsers.map((user) => (
+                {currentTeachers.map((user) => (
                     <div
                         key={user.id}
                         className="bg-[#1f1f1f] p-4 rounded-xl hover:bg-white/5 transition"
@@ -123,4 +106,4 @@ const Users = () => {
     );
 };
 
-export default Users;
+export default Students;

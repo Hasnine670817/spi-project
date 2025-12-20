@@ -48,7 +48,7 @@ const Chat = () => {
     }
 
     return (
-        <div className="flex h-[calc(100vh-190px)] lg:h-[calc(100vh-64px)] bg-[#121212] rounded-xl overflow-hidden">
+        <div className="flex h-[calc(100vh-190px)] lg:h-[calc(100vh-140px)] bg-[#121212] rounded-xl overflow-hidden">
 
             {/* LEFT SIDEBAR */}
             <div

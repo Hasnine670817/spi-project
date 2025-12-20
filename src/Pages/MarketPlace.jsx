@@ -1,12 +1,15 @@
 import { useContext, useState } from "react";
 import { AppContext } from "../Context/AppContext";
 import Loader from "../Components/Loader";
+import { useNavigate } from "react-router-dom";
 
 const MarketPlace = () => {
 
     const [activeCategory, setActiveCategory] = useState("All");
 
     const { sellItem, loading } = useContext(AppContext);
+
+    const navigate = useNavigate();
 
     const categories = [
         "All",
@@ -30,7 +33,7 @@ const MarketPlace = () => {
     }
 
     return (
-        <div className="bg-[#121212] min-h-[calc(100vh-64px)] p-4 lg:p-6 rounded-xl">
+        <div className="bg-[#121212] min-h-[calc(100vh-140px)] p-4 lg:p-6 rounded-xl">
 
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-3">
@@ -90,10 +93,10 @@ const MarketPlace = () => {
                         </p>
 
                         <div className="flex gap-2">
-                            <button className="flex-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-white text-xs">
+                            <button onClick={() => navigate(`${item.id}`)} className="flex-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-white text-xs">
                                 View
                             </button>
-                            <button className="flex-1 bg-[#2a2a2a] hover:bg-white/10 py-2 rounded-lg text-gray-300 text-xs">
+                            <button onClick={() => navigate(`/chat?seller=${item.seller}`)} className="flex-1 bg-[#2a2a2a] hover:bg-white/10 py-2 rounded-lg text-gray-300 text-xs">
                                 Chat
                             </button>
                         </div>

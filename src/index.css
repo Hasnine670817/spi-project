@@ -79,6 +79,10 @@
   .sidebar__ul a:hover svg {
     @apply !fill-royal-blue transition-all duration-300
   }
+
+  .side__link.active {
+    @apply bg-black/50 text-white/80
+  }
 }
 
 @layer utilities {
