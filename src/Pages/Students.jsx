@@ -34,10 +34,10 @@ const Students = () => {
             {/* Header */}
             <div className="mb-6">
                 <h2 className="text-white text-xl font-semibold">
-                    Teachers
+                    Students
                 </h2>
                 <p className="text-gray-400 text-sm">
-                    All SPI Teachers list
+                    All SPI Student list
                 </p>
             </div>
 

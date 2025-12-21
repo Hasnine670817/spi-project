@@ -49,6 +49,7 @@
   a {
     @apply transition-all duration-300 cursor-pointer max-h-none inline-block;
   }
+
 }
 
 @layer components {
@@ -83,8 +84,40 @@
   .side__link.active {
     @apply bg-black/50 text-white/80
   }
+
+  /* .custom-scrollbar::-webkit-scrollbar {
+    @apply w-3;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-[#f1f1f1] rounded-[10px]
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-[#3498db] rounded-[10px]
+  } */
+
 }
 
 @layer utilities {
-  /*  */
+  /* .custom-scrollbar::-webkit-scrollbar {
+    width: 12px !important;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: red !important;
+    border-radius: 10px !important;
+    scrollbar-color: red !important;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #3498db !important;
+    border-radius: 10px !important;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #3498db red;
+    border-radius: 10px;
+  } */
 }
