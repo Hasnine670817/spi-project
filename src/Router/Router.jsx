@@ -13,6 +13,7 @@ import Departments from "../Pages/Departments";
 import Students from "../Pages/Students";
 import Events from "../Pages/Events";
 import Contact from "../Pages/Contact";
+import GroupOverview from "../Components/GroupOverview";
 
 
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
             {
                 path: "/group",
                 element: <Group></Group>
+            },            
+            {
+                path: "/group/:id",
+                element: <GroupOverview></GroupOverview>
             },            
             {
                 path: "/notices",

@@ -17,6 +17,8 @@ const AppProvider = ({children}) => {
 
     const [sellItem, setSellItem] = useState([]);
 
+    const [group, setGroup] = useState([]);
+
     useEffect(() => {
         fetch('/Teachers.json')
             .then(res => res.json())
@@ -61,6 +63,19 @@ const AppProvider = ({children}) => {
             .then(res => res.json())
             .then(data => {
                 setSellItem(data)
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error(error);
+                setLoading(false)
+            })
+    }, []);
+
+    useEffect(() => {
+        fetch('/Groups.json')
+            .then(res => res.json())
+            .then(data => {
+                setGroup(data)
                 setLoading(false);
             })
             .catch(error => {
@@ -138,6 +153,7 @@ const AppProvider = ({children}) => {
         teacher,
         student,
         sellItem,
+        group,
         handleLogin,
         handleSignUp,
         selectedUser,

@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "CMT 7th Semester",
+        "type": "Department",
+        "members": 48,
+        "description": "Computer Science and Technology 7th semester students group",
+        "createdBy": "Department Admin",
+        "status": "active",
+        "createdAt": "2023-01-15"
+    },
+    {
+        "id": 2,
+        "name": "Programming Club",
+        "type": "Club",
+        "members": 120,
+        "description": "A club for students interested in programming and problem solving",
+        "createdBy": "Student Council",
+        "status": "active",
+        "createdAt": "2022-09-10"
+    },
+    {
+        "id": 3,
+        "name": "Exam Notice Board",
+        "type": "Official",
+        "members": 300,
+        "description": "Official notice board for exams and academic updates",
+        "createdBy": "Academic Office",
+        "status": "active",
+        "createdAt": "2021-06-01"
+    },
+    {
+        "id": 4,
+        "name": "Web Development Batch",
+        "type": "Course",
+        "members": 35,
+        "description": "Special batch for learning modern web development",
+        "createdBy": "ICT Department",
+        "status": "active",
+        "createdAt": "2024-02-20"
+    },
+    {
+        "id": 5,
+        "name": "Electrical Technology 1st Shift",
+        "type": "Department",
+        "members": 52,
+        "description": "Electrical Technology students (1st shift)",
+        "createdBy": "Department Admin",
+        "status": "active",
+        "createdAt": "2023-01-15"
+    },
+    {
+        "id": 6,
+        "name": "Robotics Club",
+        "type": "Club",
+        "members": 60,
+        "description": "Club focused on robotics projects and competitions",
+        "createdBy": "Robotics Instructor",
+        "status": "active",
+        "createdAt": "2022-11-05"
+    },
+    {
+        "id": 7,
+        "name": "Internship Circular Board",
+        "type": "Official",
+        "members": 280,
+        "description": "Notices related to internships and job opportunities",
+        "createdBy": "Career Development Office",
+        "status": "active",
+        "createdAt": "2023-03-18"
+    },
+    {
+        "id": 8,
+        "name": "React Fundamentals Course",
+        "type": "Course",
+        "members": 40,
+        "description": "Basic to advanced React learning batch",
+        "createdBy": "External Trainer",
+        "status": "upcoming",
+        "createdAt": "2024-06-01"
+    }
+]
