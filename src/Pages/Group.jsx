@@ -51,38 +51,40 @@ const Group = () => {
                 {filteredGroups.map((group) => (
                     <div
                         key={group.id}
-                        className="bg-[#1f1f1f] p-4 rounded-xl hover:bg-white/5 transition"
+                        className="bg-[#1f1f1f] hover:bg-white/5 transition border border-[#E2E5E9]/20 rounded-xl"
                     >
                         {/* Group Banner */}
-                        <div className="h-36 rounded-lg bg-[#2a2a2a] mb-3 flex items-center justify-center text-gray-500 text-sm">
-                            Group Banner
+                        <div className="h-36 rounded-t-xl bg-[#2a2a2a] mb-2 flex items-center justify-center text-gray-500 text-sm">
+                            <img className="w-full h-full rounded-t-xl flex justify-center items-center hover:grayscale-30 transition-all duration-200" src={group.bannerImg} alt="Group Banner" />
                         </div>
 
-                        <h3 className="text-white font-medium mb-1 truncate">
-                            {group.name}
-                        </h3>
+                        <div className="p-3 pt-0">
+                            <h3 className="text-white font-medium mb-1 truncate">
+                                {group.name}
+                            </h3>
 
-                        <div className="flex items-center justify-between text-xs mb-3">
-                            <span className="text-gray-400">
-                                {group.members} members
-                            </span>
+                            <div className="flex items-center justify-between text-xs mb-3">
+                                <span className="text-gray-400">
+                                    {group.members} members
+                                </span>
 
-                            <span className="bg-blue-600/20 text-blue-400 px-2 py-1 rounded">
-                                {group.type}
-                            </span>
-                        </div>
+                                <span className="bg-blue-600/20 text-blue-400 px-2 py-1 rounded">
+                                    {group.type}
+                                </span>
+                            </div>
 
-                        <div className="flex gap-2">
-                            <button
-                                onClick={() => navigate(`/group/${group.id}`)}
-                                className="flex-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-white text-xs"
-                            >
-                                View
-                            </button>
+                            <div className="flex gap-2">
+                                <button
+                                    onClick={() => navigate(`/group/${group.id}`)}
+                                    className="flex-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-white text-xs"
+                                >
+                                    View
+                                </button>
 
-                            <button onClick={handleLogin} className="flex-1 bg-[#2a2a2a] hover:bg-white/10 py-2 rounded-lg text-gray-300 text-xs">
-                                Join
-                            </button>
+                                <button onClick={handleLogin} className="flex-1 bg-[#2a2a2a] hover:bg-white/10 py-2 rounded-lg text-gray-300 text-xs">
+                                    Join
+                                </button>
+                            </div>
                         </div>
                     </div>
                 ))}

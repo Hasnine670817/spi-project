@@ -7,7 +7,8 @@
         "description": "Computer Science and Technology 7th semester students group",
         "createdBy": "Department Admin",
         "status": "active",
-        "createdAt": "2023-01-15"
+        "createdAt": "2023-01-15",
+        "bannerImg": "https://i.ibb.co.com/sJbxysvF/cmt-background.jpg"
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@
         "description": "A club for students interested in programming and problem solving",
         "createdBy": "Student Council",
         "status": "active",
-        "createdAt": "2022-09-10"
+        "createdAt": "2022-09-10",
+        "bannerImg": "https://i.ibb.co.com/k2kp4BrX/programming-banner.jpg"
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@
         "description": "Official notice board for exams and academic updates",
         "createdBy": "Academic Office",
         "status": "active",
-        "createdAt": "2021-06-01"
+        "createdAt": "2021-06-01",
+        "bannerImg": "https://i.ibb.co.com/Hf3HRwGd/notice-background.jpg"
     },
     {
         "id": 4,
@@ -37,7 +40,8 @@
         "description": "Special batch for learning modern web development",
         "createdBy": "ICT Department",
         "status": "active",
-        "createdAt": "2024-02-20"
+        "createdAt": "2024-02-20",
+        "bannerImg": "https://i.ibb.co.com/6Jczk61r/web-development.jpg"
     },
     {
         "id": 5,
@@ -47,7 +51,8 @@
         "description": "Electrical Technology students (1st shift)",
         "createdBy": "Department Admin",
         "status": "active",
-        "createdAt": "2023-01-15"
+        "createdAt": "2023-01-15",
+        "bannerImg": "https://i.ibb.co.com/qFFKYxqg/electrical-background.jpg"
     },
     {
         "id": 6,
@@ -57,7 +62,8 @@
         "description": "Club focused on robotics projects and competitions",
         "createdBy": "Robotics Instructor",
         "status": "active",
-        "createdAt": "2022-11-05"
+        "createdAt": "2022-11-05",
+        "bannerImg": "https://i.ibb.co.com/5gVMF79v/robotices1.jpg"
     },
     {
         "id": 7,
@@ -67,7 +73,8 @@
         "description": "Notices related to internships and job opportunities",
         "createdBy": "Career Development Office",
         "status": "active",
-        "createdAt": "2023-03-18"
+        "createdAt": "2023-03-18",
+        "bannerImg": "https://i.ibb.co.com/wNfv3dtx/internship-background.webp"
     },
     {
         "id": 8,
@@ -77,6 +84,7 @@
         "description": "Basic to advanced React learning batch",
         "createdBy": "External Trainer",
         "status": "upcoming",
-        "createdAt": "2024-06-01"
+        "createdAt": "2024-06-01",
+        "bannerImg": "https://i.ibb.co.com/7tb0t07F/react-bg.jpg"
     }
 ]

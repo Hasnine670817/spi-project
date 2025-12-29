@@ -56,7 +56,7 @@ const Chat = () => {
                 ${showChatWindow ? "hidden md:block lg:hidden xl:block" : "block"}`}
             >
                 <h2 className="text-white font-semibold p-4">
-                    Chats
+                    Live Chats
                 </h2>
 
                 {chatUsers.map((chat) => (

@@ -76,8 +76,8 @@ const MarketPlace = () => {
                         className="bg-[#1f1f1f] rounded-xl p-4 hover:bg-white/5 transition"
                     >
                         {/* Image Placeholder */}
-                        <div className="h-36 rounded-lg bg-[#2a2a2a] flex items-center justify-center text-gray-500 text-sm mb-3">
-                            Item Image
+                        <div className="h-36 rounded-lg bg-[#2a2a2a] flex items-center justify-center text-gray-500 text-sm mb-3 p-4">
+                            <img className="max-h-full" src={item.img} alt="Item Image" />
                         </div>
 
                         <h3 className="text-white font-medium text-sm mb-1">

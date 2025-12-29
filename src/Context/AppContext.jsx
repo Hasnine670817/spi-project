@@ -1,13 +1,12 @@
 import { Children, createContext, useEffect, useState } from "react";
 import { FaChalkboardTeacher } from "react-icons/fa";
-import { MdApartment, MdCampaign, MdContactMail, MdDashboard, MdEvent } from "react-icons/md";
+import { MdApartment, MdCampaign, MdContactMail, MdDashboard, MdEvent, MdOutlinePostAdd } from "react-icons/md";
 import { PiStudentBold } from "react-icons/pi";
 import { Link, NavLink } from "react-router-dom";
 
 export const AppContext = createContext(null);
 
 const AppProvider = ({children}) => {
-    const [user, setUser] = useState([]);
     const [loading, setLoading] = useState(true);
 
     const [teacher, setTeacher] = useState([]);
@@ -18,6 +17,8 @@ const AppProvider = ({children}) => {
     const [sellItem, setSellItem] = useState([]);
 
     const [group, setGroup] = useState([]);
+
+    const [post, setPost] = useState([]);
 
     useEffect(() => {
         fetch('/Teachers.json')
@@ -46,10 +47,10 @@ const AppProvider = ({children}) => {
     }, []);
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch('/Posts.json')
             .then(res => res.json())
             .then(data => {
-                setUser(data);
+                setPost(data);
                 setLoading(false)
             })
             .catch(error => {
@@ -85,53 +86,15 @@ const AppProvider = ({children}) => {
     }, [])
 
 
+    const closeDrawer = () => {
+        const drawer = document.getElementById("menu-drawer");
+        if(drawer) drawer.checked = false;
+    };
 
-    const sideBar = (
-        <>
-            <li>
-                <NavLink to={"/"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
-                    <MdDashboard className='text-2xl transition-all duration-300' />
-                    Dashboard
-                </NavLink>
-            </li>
-            <li>
-                <NavLink to={"/notices"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
-                    <MdCampaign className='text-2xl transition-all duration-300' />
-                    Notices
-                </NavLink>
-            </li>
-            <li>
-                <NavLink to={"departments"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
-                    <MdApartment className='text-2xl transition-all duration-300' />
-                    Departments
-                </NavLink>
-            </li>
-            <li>
-                <NavLink to={"/teachers"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
-                    <FaChalkboardTeacher className='text-2xl transition-all duration-300' />
-                    Teachers
-                </NavLink>
-            </li>
-            <li>
-                <NavLink to={"students"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
-                    <PiStudentBold className='text-2xl transition-all duration-300' />
-                    Students
-                </NavLink>
-            </li>
-            <li>
-                <NavLink to={"events"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3'>
-                    <MdEvent className='text-2xl transition-all duration-300' />
-                    Events
-                </NavLink>
-            </li>
-            <li>
-                <NavLink to={"contact"} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3'>
-                    <MdContactMail className='text-2xl transition-all duration-300' />
-                    Contact
-                </NavLink>
-            </li>
-        </>
-    )
+
+
+
+    
 
     const handleLogin = () => {
         document.getElementById('login_modal').showModal()
@@ -146,14 +109,67 @@ const AppProvider = ({children}) => {
         document.getElementById('view__more').showModal();
     }
 
+    const sideBar = (
+        <>
+            <li>
+                <NavLink to={"/"} onClick={closeDrawer} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
+                    <MdDashboard className='text-2xl transition-all duration-300' />
+                    Dashboard
+                </NavLink>
+            </li>
+            <li>
+                <button onClick={handleLogin} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
+                    <MdOutlinePostAdd className='text-2xl transition-all duration-300' />
+                    Create Post
+                </button>
+            </li>
+            <li>
+                <NavLink to={"/notices"} onClick={closeDrawer} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
+                    <MdCampaign className='text-2xl transition-all duration-300' />
+                    Notices
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to={"departments"} onClick={closeDrawer} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
+                    <MdApartment className='text-2xl transition-all duration-300' />
+                    Departments
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to={"/teachers"} onClick={closeDrawer} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
+                    <FaChalkboardTeacher className='text-2xl transition-all duration-300' />
+                    Teachers
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to={"students"} onClick={closeDrawer} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3 mb-2 side__link'>
+                    <PiStudentBold className='text-2xl transition-all duration-300' />
+                    Students
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to={"events"} onClick={closeDrawer} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3'>
+                    <MdEvent className='text-2xl transition-all duration-300' />
+                    Events
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to={"contact"} onClick={closeDrawer} className='w-full rounded-md px-4 py-3 text-base hover:bg-dark-gray/60 flex items-center gap-3'>
+                    <MdContactMail className='text-2xl transition-all duration-300' />
+                    Contact
+                </NavLink>
+            </li>
+        </>
+    )
+
     const value = {
-        user,
         loading,
         sideBar,
         teacher,
         student,
         sellItem,
         group,
+        post,
         handleLogin,
         handleSignUp,
         selectedUser,

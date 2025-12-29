@@ -4,104 +4,119 @@
         "title": "Engineering Mathematics Book",
         "price": 350,
         "category": "Books",
-        "seller": "Rahim (CMT 7th)"
+        "seller": "Rahim (CMT 7th)",
+        "img": "https://i.ibb.co.com/tMHqVZNv/book11.jpg"
     },
     {
         "id": 2,
         "title": "Scientific Calculator",
         "price": 1200,
         "category": "Electronics",
-        "seller": "Karim (ET 5th)"
+        "seller": "Karim (ET 5th)",
+        "img": "https://i.ibb.co.com/LXSY04fW/calculator.avif"
     },
     {
         "id": 3,
         "title": "Laptop Backpack",
         "price": 800,
         "category": "Accessories",
-        "seller": "Ayesha (CT 6th)"
+        "seller": "Ayesha (CT 6th)",
+        "img": "https://i.ibb.co.com/QFMWZ6Fn/laptop-bag.png"
     },
     {
         "id": 4,
         "title": "Digital Multimeter",
         "price": 1500,
         "category": "Lab Equipment",
-        "seller": "Hasan (CMT 8th)"
+        "seller": "Hasan (CMT 8th)",
+        "img": "https://i.ibb.co.com/5XNNQ6n7/digital-multimeter.png"
     },
     {
         "id": 5,
         "title": "Programming in C Book",
         "price": 420,
         "category": "Books",
-        "seller": "Shadid (CST 6th)"
+        "seller": "Shadid (CST 6th)",
+        "img": "https://i.ibb.co.com/5XDCKvcK/programming-c.png"
     },
     {
         "id": 6,
         "title": "Ethernet LAN Cable (10m)",
         "price": 300,
         "category": "Networking",
-        "seller": "Roni (CST 6th)"
+        "seller": "Roni (CST 6th)",
+        "img": "https://i.ibb.co.com/pvjKN6Tj/lan-cable.png"
     },
     {
         "id": 7,
         "title": "Arduino Uno Board",
         "price": 950,
         "category": "Electronics",
-        "seller": "Naznin (CST 6th)"
+        "seller": "Zahidul (CST 6th)",
+        "img": "https://i.ibb.co.com/S4n179RB/arduino-uno.png"
     },
     {
         "id": 8,
         "title": "Wireless Mouse",
         "price": 650,
         "category": "Accessories",
-        "seller": "Ananta (CST 6th)"
+        "seller": "Ananta (CST 6th)",
+        "img": "https://i.ibb.co.com/bjt5jZZK/wireless-mouse.png"
     },
     {
         "id": 9,
         "title": "Engineering Drawing Set",
         "price": 500,
         "category": "Stationery",
-        "seller": "Sadia (CST 6th)"
+        "seller": "Sadia (CST 6th)",
+        "img": "https://i.ibb.co.com/3mf1wtTZ/drawing-set.webp"
     },
     {
         "id": 10,
         "title": "USB Flash Drive 32GB",
         "price": 700,
         "category": "Storage",
-        "seller": "Junaid (CST 6th)"
+        "seller": "Junaid (CST 6th)",
+        "img": "https://i.ibb.co.com/Ps6BN9f1/flash-drive.png"
     },
     {
         "id": 11,
         "title": "Basic Electronics Book",
         "price": 380,
         "category": "Books",
-        "seller": "Iqbal (ET 6th)"
+        "seller": "Iqbal (ET 6th)",
+        "img": "https://i.ibb.co.com/cSgZtv2T/basic-electronics.jpg"
     },
     {
         "id": 12,
         "title": "RJ45 Crimping Tool",
         "price": 1100,
         "category": "Networking Tools",
-        "seller": "Rakib (CST 6th)"
+        "seller": "Rakib (CST 6th)",
+        "img": "https://i.ibb.co.com/fd9tYp1K/rj-45-crimping-tool.png"
     },
     {
         "id": 13,
         "title": "Power Bank 20000mAh",
         "price": 1800,
         "category": "Electronics",
-        "seller": "Sujon (CST 6th)"
+        "seller": "Sujon (CST 6th)",
+        "img": "https://i.ibb.co.com/d3bKRbY/power-bank.webp"
     },
     {
         "id": 14,
         "title": "Notebook Pack (5 pcs)",
         "price": 250,
         "category": "Stationery",
-        "seller": "Farhana (CST 6th)"
+        "seller": "Farhana (CST 6th)",
+        "img": "https://i.ibb.co.com/SX0xVVJ7/note-book11.webp"
     },
     {
         "id": 15,
         "title": "Bluetooth Headphones",
         "price": 2200,
         "category": "Accessories",
-        "seller": "Ocean (CST 6th)"
+        "seller": "Ocean (CST 6th)",
+        "img": "https://i.ibb.co.com/V032Hwns/headphone.png"
     }
 ]

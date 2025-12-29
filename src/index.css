@@ -4,6 +4,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+
 @theme {
   /* font family */
   --font-outfit: "Outfit", sans-serif;
@@ -77,7 +78,8 @@
     @apply w-full
   } */
 
-  .sidebar__ul a:hover svg {
+  .sidebar__ul a:hover svg,
+  .sidebar__ul button:hover svg {
     @apply !fill-royal-blue transition-all duration-300
   }
 

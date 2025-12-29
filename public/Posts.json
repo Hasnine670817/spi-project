@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "author": "Rafi",
+        "dept": "Computer Technology",
+        "time": "2h ago",
+        "text": "Tomorrow lab exam — please be prepared 😄",
+        "image": ""
+    },
+    {
+        "id": 2,
+        "author": "Shakib",
+        "dept": "Programming Club",
+        "time": "5h ago",
+        "text": "Selling old Laptop — i5 7th Gen",
+        "image": ""
+    },
+    {
+        "id": 3,
+        "author": "Nusrat",
+        "dept": "CMT 7th Semester",
+        "time": "1d ago",
+        "text": "Class test postponed — new date will be announced soon",
+        "image": ""
+    },
+    {
+        "id": 4,
+        "author": "Hasib",
+        "dept": "Web Development Batch",
+        "time": "3h ago",
+        "text": "Anyone interested in React practice meetup?",
+        "image": ""
+    },
+    {
+        "id": 5,
+        "author": "Tania",
+        "dept": "Programming Club",
+        "time": "30m ago",
+        "text": "Solved 5 problems on Codeforces today 🎯",
+        "image": ""
+    },
+    {
+        "id": 6,
+        "author": "Sabbir",
+        "dept": "Electrical Technology",
+        "time": "6h ago",
+        "text": "Looking for used multimeter — inbox me please",
+        "image": ""
+    },
+    {
+        "id": 7,
+        "author": "Amina",
+        "dept": "UI/UX Course",
+        "time": "2d ago",
+        "text": "Shared my latest mobile app UI design ✨",
+        "image": "design-preview.jpg"
+    },
+    {
+        "id": 8,
+        "author": "Rohan",
+        "dept": "Sports Club",
+        "time": "1h ago",
+        "text": "Cricket practice starts at 4PM today 🏏",
+        "image": ""
+    },
+    {
+        "id": 9,
+        "author": "Faisal",
+        "dept": "Exam Notice Board",
+        "time": "4h ago",
+        "text": "Final exam routine published — check notice section",
+        "image": ""
+    },
+    {
+        "id": 10,
+        "author": "Mahin",
+        "dept": "Cultural Club",
+        "time": "3d ago",
+        "text": "Audition for music & drama starts next week 🎤",
+        "image": ""
+    },
+    {
+        "id": 11,
+        "author": "Rakib",
+        "dept": "Python Course",
+        "time": "7h ago",
+        "text": "Completed assignment on OOP — feeling confident 💻",
+        "image": ""
+    },
+    {
+        "id": 12,
+        "author": "Sadia",
+        "dept": "Computer Technology",
+        "time": "50m ago",
+        "text": "Group study today at library — who will join?",
+        "image": ""
+    },
+    {
+        "id": 13,
+        "author": "Jewel",
+        "dept": "Job & Internship Board",
+        "time": "2d ago",
+        "text": "IT Support Internship opportunity — apply soon",
+        "image": ""
+    },
+    {
+        "id": 14,
+        "author": "Mitu",
+        "dept": "Robotics Club",
+        "time": "6h ago",
+        "text": "Line follower robot almost ready 🤖",
+        "image": "robot-prototype.png"
+    },
+    {
+        "id": 15,
+        "author": "Nahid",
+        "dept": "Advanced JavaScript",
+        "time": "1d ago",
+        "text": "Practicing ES6 modules & async await",
+        "image": ""
+    },
+    {
+        "id": 16,
+        "author": "Riya",
+        "dept": "Photography Club",
+        "time": "9h ago",
+        "text": "Uploaded new campus photography album 📸",
+        "image": "gallery-01.jpg"
+    },
+    {
+        "id": 17,
+        "author": "Tanvir",
+        "dept": "Civil Technology",
+        "time": "5h ago",
+        "text": "Survey practical class tomorrow — bring instruments",
+        "image": ""
+    },
+    {
+        "id": 18,
+        "author": "Sohan",
+        "dept": "Programming Club",
+        "time": "40m ago",
+        "text": "Who wants to join competitive programming team?",
+        "image": ""
+    },
+    {
+        "id": 19,
+        "author": "Zarin",
+        "dept": "Networking Lab",
+        "time": "10h ago",
+        "text": "Configured router successfully — thanks to seniors 🙌",
+        "image": ""
+    },
+    {
+        "id": 20,
+        "author": "Arif",
+        "dept": "Marketplace Group",
+        "time": "3h ago",
+        "text": "Selling keyboard — mechanical (blue switch)",
+        "image": ""
+    }
+]

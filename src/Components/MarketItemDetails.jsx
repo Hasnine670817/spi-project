@@ -23,14 +23,14 @@ const MarketItemDetails = () => {
     }
 
     return (
-        <div className="bg-[#121212] min-h-[calc(100vh-140px)] p-6 rounded-xl">
+        <div className="bg-[#121212] min-h-[calc(100vh-140px)] p-3 sm:p-6 rounded-xl">
 
-            <div className="max-w-3xl mx-auto bg-[#1f1f1f] p-6 rounded-xl">
-                <div className="h-60 bg-[#2a2a2a] rounded-lg mb-4 flex items-center justify-center text-gray-500">
-                    Item Image
+            <div className="max-w-3xl mx-auto bg-[#1f1f1f] p-3 sm:p-6 rounded-xl">
+                <div className="h-60 bg-[#2a2a2a] rounded-lg mb-4 flex items-center justify-center text-gray-500 p-6">
+                    <img className="max-h-full" src={item.img} alt="Item Image" />
                 </div>
 
-                <h2 className="text-white text-xl font-semibold mb-2">
+                <h2 className="text-white text-xl font-semibold mb-2 truncate" title={item.title}>
                     {item.title}
                 </h2>
 
@@ -43,11 +43,11 @@ const MarketItemDetails = () => {
                 </p>
 
                 <div className="flex items-center justify-between">
-                    <button onClick={() => navigate(-1)} className="bg-[#2a2a2a] hover:bg-white/10 py-2 px-5 rounded-lg text-gray-300 text-xs flex gap-2 items-center">
+                    <button onClick={() => navigate(-1)} className="bg-[#2a2a2a] hover:bg-white/10 py-2 px-5 rounded-lg text-gray-300 text-sm flex gap-2 items-center">
                         <FaArrowLeftLong />
                         Back
                     </button>
-                    <button onClick={() => navigate(`/chat?seller=${item.seller}`)} className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg text-white text-xs">
+                    <button onClick={() => navigate(`/chat?seller=${item.seller}`)} className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg text-white text-sm">
                         Chat with Seller
                     </button>
                 </div>

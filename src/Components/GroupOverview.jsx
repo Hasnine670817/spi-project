@@ -22,7 +22,7 @@ const GroupOverview = () => {
             {/* Banner */}
             <div className="relative rounded-xl overflow-hidden mb-6">
                 <div className="h-48 w-full bg-[#2a2a2a] flex items-center justify-center text-gray-400 text-sm">
-                    Group Banner
+                    <img src={filteredGroup.bannerImg} className="w-full h-full" alt="Group Banner" />
                 </div>
                 <div className="absolute bottom-3 left-4 xl:bottom-4 xl:left-6 text-white">
                     <h1 className="text-xl xl:text-2xl font-bold">{filteredGroup.name}</h1>
@@ -52,16 +52,16 @@ const GroupOverview = () => {
 
             {/* Actions */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 xl:gap-4">
-                <button onClick={handleLogin} className="flex-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-white text-sm">
-                    Join Group
-                </button>
-                <button onClick={handleChat} className="flex-1 bg-[#2a2a2a] hover:bg-white/10 py-2 rounded-lg text-gray-300 text-sm">
-                    Message Admin
-                </button>
                 <button onClick={() => navigate(-1)} className="flex-1 bg-[#444] hover:bg-[#555] py-2 rounded-lg text-gray-200 text-sm flex items-center gap-3 justify-center">
                     <FaArrowLeftLong />
                     Back
-                </button>
+                </button>                
+                <button onClick={handleChat} className="flex-1 bg-[#2a2a2a] hover:bg-white/10 py-2 rounded-lg text-gray-300 text-sm">
+                    Message Admin
+                </button>      
+                <button onClick={handleLogin} className="flex-1 col-span-2 sm:col-span-1 bg-blue-600 hover:bg-blue-700 py-2 rounded-lg text-white text-sm">
+                    Join Group
+                </button>          
             </div>
         </div>
     );
