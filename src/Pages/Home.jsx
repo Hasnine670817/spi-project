@@ -2,49 +2,17 @@ import { useContext } from "react";
 import { AppContext } from "../Context/AppContext";
 import Loader from "../Components/Loader";
 import { FaComment, FaPlus, FaShare, FaThumbsUp } from "react-icons/fa";
+import NoticesDetails from "../Components/NoticesDetails";
 
 const Home = () => {
 
-    const { loading, post } = useContext(AppContext);
+    const { loading, post, notice, handleNotice } = useContext(AppContext);
 
     if (loading) {
         return (
             <Loader></Loader>
         );
     }
-
-    // ---- Notice Data ----
-    const notices = [
-        {
-            id: 1,
-            title: "Exam Routine PublishedAll the students who fail to deposit money in Sure Cash are instructed to deposit money directly through receipt in the register branch and account branch.",
-            type: "Important",
-            date: "07 Dec 2025",
-            color: "#2a2a2a"
-        },
-        {
-            id: 2,
-            title: "Lab Test Tomorrow",
-            type: "Reminder",
-            date: "30 Dec 2025",
-            color: "#1f1f1f"
-        },
-        {
-            id: 3,
-            title: "Class Cancel – 7th Semester",
-            type: "Urgent",
-            date: "Today",
-            color: "#2a2a2a"
-        },
-        {
-            id: 4,
-            title: "Department Meeting",
-            type: "General",
-            date: "1 Jan 2026",
-            color: "#1f1f1f"
-        }
-    ];
-
 
     return (
         <div className="space-y-6">
@@ -63,33 +31,27 @@ const Home = () => {
                 </div>
 
                 {/* Dynamic Notices */}
-                {notices.map(notice => (
+                {notice.map(not => (
                     <div
-                        key={notice.id}
-                        className="min-w-[140px] h-[180px] rounded-2xl border 
-                            border-white/10 p-3 flex flex-col justify-between"
-                        style={{ background: notice.color }}
+                        key={not.id}
+                        className="min-w-[180px] h-[180px] rounded-xl p-4 flex flex-col justify-between
+                                shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer border border-white/10"
+                        style={{ background: `linear-gradient(135deg, ${not.color} 0%, #00000020 100%)` }}
                     >
-
-                        {/* Notice Type Badge */}
-                        {/* <span className={`text-xs px-2 py-1 rounded-lg w-fit
-                            ${notice.type === "Urgent" ? "bg-red-600 text-white"
-                            : notice.type === "Important" ? "bg-yellow-600 text-white"
-                            : "bg-white/10 text-gray-300"}`}>
-                            {notice.type}
-                        </span> */}
-
                         {/* Notice Title */}
-                        <h4 className="text-sm font-medium leading-tight truncate line-clamp-2">
-                            {notice.title}
+                        <h4 className="text-sm font-semibold leading-snug text-white line-clamp-2">
+                            {not.title}
                         </h4>
 
-                        {/* Date */}
-                        <p className="text-xs text-gray-400">
-                            {notice.date}
-                        </p>
-
+                        <div className="flex items-center justify-between mt-2">
+                            {/* Date */}
+                            <p className="text-xs text-gray-300">
+                                {not.date}
+                            </p>
+                            <button onClick={() => handleNotice(not.id)} type="button" className="text-xs text-royal-blue hover:underline">See more</button>
+                        </div>
                     </div>
+
                 ))}
 
             </div>
@@ -101,7 +63,7 @@ const Home = () => {
                 {post.map(p => (
                     <div
                         key={p.id}
-                        className="bg-[#1f1f1f] border border-white/10 rounded-2xl p-4 pb-2"
+                        className="bg-[#1f1f1f] border border-white/10 rounded-2xl p-3 sm:p-4 pb-2 sm:pb-2"
                     >
 
                         {/* Post Header */}
@@ -117,32 +79,32 @@ const Home = () => {
                         </div>
 
                         {/* post container */}
-                        <div className="pt-2 pb-4">
+                        <div className="pt-2 pb-4 space-y-3">
                             {/* Post Text */}
-                            <p className="text-gray-300 mb-3">
+                            <p className="text-gray-300">
                                 {p.text}
                             </p>
 
                             {/* Post Image (if any) */}
                             {p.image && (
-                                <div className="h-52 rounded-xl bg-[#2a2a2a]">
+                                <div className="h-52 3xxl:h-60 3xxxl:h-70 4xl:h-80 rounded-xl bg-[#2a2a2a]">
                                     <img className="w-full h-full rounded-xl flex justify-center items-center" src={p.img} alt="Post Image" />
                                 </div>
                             )}
                         </div>
 
                         {/* Action Buttons */}
-                        <div className="flex items-center justify-between border-t border-white/10 pt-2">
+                        <div className="flex items-center justify-between border-t border-white/10 pt-2 text-sm sm:text-base">
 
-                            <button className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white/5">
+                            <button className="flex items-center gap-2 px-4 py-2 3xl:px-8 3xxl:px-10 4xl:px-12 rounded-lg hover:bg-white/5">
                                 <FaThumbsUp /> Like
                             </button>
 
-                            <button className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white/5">
+                            <button className="flex items-center gap-2 px-4 py-2 3xl:px-8 3xxl:px-10 4xl:px-12 rounded-lg hover:bg-white/5">
                                 <FaComment /> Comment
                             </button>
 
-                            <button className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white/5">
+                            <button className="flex items-center gap-2 px-4 py-2 3xl:px-8 3xxl:px-10 4xl:px-12 rounded-lg hover:bg-white/5">
                                 <FaShare /> Share
                             </button>
 
@@ -152,6 +114,8 @@ const Home = () => {
                 ))}
 
             </div>
+
+            <NoticesDetails></NoticesDetails>
 
         </div>
     );

@@ -20,6 +20,19 @@ const AppProvider = ({children}) => {
 
     const [post, setPost] = useState([]);
 
+    const [notice, setNotice] = useState([]);
+
+    const [selectedNotice, setSelectedNotice] = useState(null);
+
+    const handleNotice = (id) => {
+        const found = notice.find(n => n.id === id);
+        setSelectedNotice(found);
+
+        const modal = document.getElementById("notice__modal");
+        if (modal) modal.showModal();
+    };
+
+
     useEffect(() => {
         fetch('/Teachers.json')
             .then(res => res.json())
@@ -77,6 +90,19 @@ const AppProvider = ({children}) => {
             .then(res => res.json())
             .then(data => {
                 setGroup(data)
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error(error);
+                setLoading(false)
+            })
+    }, [])
+
+    useEffect(() => {
+        fetch('/Notices.json')
+            .then(res => res.json())
+            .then(data => {
+                setNotice(data)
                 setLoading(false);
             })
             .catch(error => {
@@ -170,10 +196,13 @@ const AppProvider = ({children}) => {
         sellItem,
         group,
         post,
+        notice,
+        selectedNotice,
         handleLogin,
         handleSignUp,
         selectedUser,
-        handleViewMore
+        handleViewMore,
+        handleNotice
     }
 
     return (
